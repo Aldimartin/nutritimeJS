@@ -13,7 +13,7 @@ function entrar(){
    localStorage.setItem('usuario', usu)
    localStorage.setItem('password', pass)
    localStorage.setItem('email', email)
-   window.document.location = '../pages/productos.html'; 
+   window.document.location = 'https://aldimartin.github.io/nutritimeJS/pages/productos.html'; 
 
 }
 let usuario = localStorage.getItem("usu")

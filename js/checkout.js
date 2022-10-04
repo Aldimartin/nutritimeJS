@@ -19,11 +19,11 @@ listaObj.forEach(itemCarrito => {
     div.className = 'compraTarjeta'
 
     div.innerHTML = `<div  class="row item">
-                        <div class="col-4 align-self-center"><img class="img-fluid" src=" ${itemCarrito.img} "></div>
-                        <div class="col-8">
+                        <div class="col-3 align-self-center"><img class="img-fluid" src=" ${itemCarrito.img} "></div>
+                        <div class="col-9">
                         <div class="row"><b>$${itemCarrito.precio}</b></div>
-                        <div class="row text-muted">${itemCarrito.nombre}</div>
-                        <div class="row">Cant: ${itemCarrito.cantidad}</div>
+                        <div class="row">${itemCarrito.nombre}</div>
+                        <div class="row">Cantidad: ${itemCarrito.cantidad}</div>
                         <hr>` 
     tarjetaBody.appendChild(div);
 
@@ -148,7 +148,6 @@ document.querySelector("#cancelarCompra").onclick = () => {
         Swal.fire({
             title: 'Quieres realizar tu compra',
             text: "No podras revertir esta accion!",
-            imageUrl: 'https://media2.giphy.com/media/72EjRhsNqkzDiwE6TC/giphy.gif?cid=ecf05e477gw15j07un1tow4ria3a0gen9myqm1x1t6u4ptp4&rid=giphy.gif&ct=g',
             imageWidth: 400,
             imageHeight: 200,
             imageAlt: '',
