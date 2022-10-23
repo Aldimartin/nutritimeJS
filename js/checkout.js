@@ -120,13 +120,13 @@ numeroSeguridad.addEventListener('keydown', (e)=>{
 /*librerias sweetalert para funcion de boton de comprar*/
 document.querySelector("#cancelarCompra").onclick = () => {
     Swal.fire({
-        title: 'Quieres cancelar tu compra',
-        text: "No podras revertir esta accion!",
+        title: 'Quieres cancelar tu compra?',
+        text: "No podras revertir esta accion",
         icon: 'warning',
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
-        confirmButtonText: 'Cancelar compra!'
+        confirmButtonText: 'Cancelar compra'
     }).then((result) => {
         if (result.isConfirmed) {
         Swal.fire(
@@ -146,15 +146,15 @@ document.querySelector("#cancelarCompra").onclick = () => {
 
     document.querySelector("#realizarCompra").onclick = () => {
         Swal.fire({
-            title: 'Quieres realizar tu compra',
-            text: "No podras revertir esta accion!",
+            title: 'Quieres realizar tu compra?',
+            text: "No podras revertir esta accion",
             imageWidth: 400,
             imageHeight: 200,
             imageAlt: '',
             showCancelButton: true,
             confirmButtonColor: '#3085d6',
             cancelButtonColor: '#d33',
-            confirmButtonText: 'Realizar Compra!'
+            confirmButtonText: 'Realizar Compra'
         }).then((result) => {
             if (result.isConfirmed) {
             Swal.fire(
